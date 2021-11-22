@@ -45,9 +45,18 @@ function map(array, func) {
 // uppercaseAll(strArr); ==> [ 'HELLO', 'WORLD', 'WHIRLED', 'PEAS' ]
 
 function uppercaseAll(arrayOfStrings) {
-  // TODO: your code here
-
+  var arr = [];
+ map(arrayOfStrings,function(element,i){
+arr.push(element.toUpperCase())
+  });
+return arr
 }
+
+undefined
+uppercaseAll(['hello', 'world', 'whirled', 'peas']);
+(4) ['HELLO', 'WORLD', 'WHIRLED', 'PEAS']
+
+first I declare the function each and map  in the console then I call it in the function uppercaseAll 
 
 //=============================================================================
 /*                                  Q2                                       */
@@ -78,7 +87,11 @@ var data = [
 // Note: please write one or two lines here describing your solution.
 
 function highestPopulation(arrayOfObjects) {
-  // TODO: your code here
+  return filter(arrayOfObjects,function(element,i){
+    if(element[i]>500000000){
+
+    }
+  })
 
 }
 
@@ -93,9 +106,16 @@ function highestPopulation(arrayOfObjects) {
 // Note: please write one or two lines here describing your solution.
 
 function halveAll(numbers) {
-  // your code is here
-
+  var arr =[];
+  map(numbers,function(element,i){
+    arr.push(element/2)
+  });
+return arr
 }
+
+undefined
+halveAll([2, 6, 20, 8, 14]);
+(5) [1, 3, 10, 4, 7]
 
 //=============================================================================
 /*                                  Q4                                       */
@@ -105,8 +125,11 @@ function halveAll(numbers) {
 // Note: please write one or two lines here describing your solution.
 
 function values(obj) {
-  // your code is here
-
+  var arr =[];
+  each(obj,function(element,key){
+    arr.push(element.key)
+  });
+return arr
 }
 
 
