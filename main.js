@@ -46,7 +46,10 @@ function map(array, func) {
 
 function uppercaseAll(arrayOfStrings) {
   // TODO: your code here
-
+  tota = []
+return map (arrayOfStrings,function(elementOfStrings,i) {
+  return elementOfStrings.toUpperCase()
+});
 }
 
 //=============================================================================
@@ -79,7 +82,9 @@ var data = [
 
 function highestPopulation(arrayOfObjects) {
   // TODO: your code here
-
+  filter(arrayOfObjects,element){
+     arrayOfObjects.population >=  500000000  
+  }
 }
 
 //=============================================================================
@@ -94,8 +99,9 @@ function highestPopulation(arrayOfObjects) {
 
 function halveAll(numbers) {
   // your code is here
-
-}
+return map(numbers,function(number,i){
+  return number/2 
+})}
 
 //=============================================================================
 /*                                  Q4                                       */
@@ -105,8 +111,12 @@ function halveAll(numbers) {
 // Note: please write one or two lines here describing your solution.
 
 function values(obj) {
+ var  tet = [];
   // your code is here
-
+each(obj,function(element,key) {
+  tet.push(obj[key]) ;
+});
+return tet ;
 }
 
 
