@@ -31,30 +31,10 @@ function map(array, func) {
 
 // Remember to relax :)
 
-//=======================================================================
-/*                                  Q1                                 */
-//=======================================================================
-//Depending on data modeling concept that you have learned:
-// create a factory function called makeComputer that represents computers,
-// what different attributes computers may have? create two computers object from your factory function and save them in
-// one array called computers!
-// Note: please write one or two lines here describing your solution.
-
-function makeComputer(type, color, weight) {
-  // TODO: Your code here
-
-}
-
-// write function displayComputer that can be used to display one computer.
-
-function displayComputer(computer) {
-  // TODO: Your code here
-
-}
 
 
 //=============================================================================
-/*                                  Q2                                       */
+/*                                  Q1                                       */
 //=============================================================================
 
 //Using Map , Write a function that takes an array of strings as a input,and returns an array
@@ -70,7 +50,7 @@ function uppercaseAll(arrayOfStrings) {
 }
 
 //=============================================================================
-/*                                  Q3                                       */
+/*                                  Q2                                       */
 //=============================================================================
 //Using Filter , write a function that takes array of objects  as an input and returns an array
 //with only the countries that have a population higher than 500 million.
@@ -103,7 +83,7 @@ function highestPopulation(arrayOfObjects) {
 }
 
 //=============================================================================
-/*                              Q4                                           */
+/*                              Q3                                           */
 //=============================================================================
 
 //Using Map, Write a function halveAll that takes an array of numbers as a input and returns an array
@@ -118,7 +98,7 @@ function halveAll(numbers) {
 }
 
 //=============================================================================
-/*                                  Q5                                       */
+/*                                  Q4                                       */
 //=============================================================================
 //Using Each, write a function called values that accepts an object as a parameter, and outputs an array of the object's values.
 // values({first : 5, second: 'something' , third : 129}) ==> [5, 'something', 129];
